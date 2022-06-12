@@ -1,4 +1,3 @@
-# import
 """
 #import random
 #import random as r
@@ -12,8 +11,8 @@ print(sample)
 n = int(input())
 for i in range(n):
     print(randint(1,100),end=" ")
-"""
 
+"""
 # lambda
 """
 add = lambda x: x+3
@@ -22,6 +21,8 @@ print((lambda x: x+3)(3))
 
 mul = lambda x,y: x*y
 print(mul(3,5))
+"""
+
 """
 # filter
 import random
@@ -33,12 +34,28 @@ new_scores = list(map(lambda x: int(x*0.7+30),scores))
 print(f"調整後的分數: {new_scores}")
 new_scores = sorted(scores, key=lambda x: x)
 print(f"排序後的分數: {new_scores}")
+"""
 
 
+# def add(x):
+#     return x + 3
 
 
+# add = lambda x: x + 3
+# print(add(10))
 
+import random
+numbers = []
+for i in range(10):
+    numbers.append(random.randint(1,100))
+print(f"原始: {numbers}")
 
+new_numbers = list(filter(lambda s:s>=60,numbers))
+print(f"篩選後: {new_numbers}")
 
+new_numbers = []
+for v in numbers:
+    if v >= 60:
+        new_numbers.append(v)
 
 
