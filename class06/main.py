@@ -49,7 +49,6 @@ class Warrior:
             self.exp -= 100
             print(f"升級!! 已到達 {self.level}")
 
-import random
 class Enemy:
     def __init__(self,name):
         self.n = name
