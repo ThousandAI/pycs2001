@@ -38,8 +38,6 @@ class Warrior:
     def attack(self,enemy):
         self.exp += 40
         enemy.hp -= 10
-        if enemy.hp == 0:
-            del enemy
         self.level_up()
         print(f"{self.n} attack {enemy.n}, Enemy hp: {enemy.hp}")
 
@@ -60,10 +58,3 @@ warrior1 = Warrior(name="Thousand",gender="Male",weapon='Sword')
 warrior2 = Warrior(name="Allie",gender="Female",weapon='Arrow')
 #print(f"Warrior2 {warrior2}")
 enemy1 = Enemy("Frank")
-
-while True:
-    try:
-        warrior1.attack(enemy1)
-    except UnboundLocalError:
-        print("戰勝敵人")
-        break
