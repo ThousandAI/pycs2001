@@ -1,5 +1,5 @@
+import random
 """
-#import random
 #import random as r
 from random import randint
 #sample = random.randint(1,100)
@@ -44,7 +44,6 @@ print(f"排序後的分數: {new_scores}")
 # add = lambda x: x + 3
 # print(add(10))
 
-import random
 numbers = []
 for i in range(10):
     numbers.append(random.randint(1,100))
